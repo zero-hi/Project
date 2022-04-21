@@ -1,0 +1,47 @@
+<!DOCYTYPE HTML>
+<html>
+<head>
+<title>심혈관 질환 사전 진단 테스트</title>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Jua&family=Nanum+Gothic&family=Stylish&display=swap" rel="stylesheet">
+<style>
+    *{
+        font-family: 'Gamja Flower', cursive;
+     }
+</style>
+</head>
+<body>
+    <div style="text-align : center;" >
+        <h1>
+            심혈관 질환 사전 진단 테스트
+        </h1>
+        <!-- 제출을 누르면 action에 지정한 경로로 간다 -->
+        <form action="http://localhost:5000/result" method="POST">
+            <fieldset>
+                나이 : <input type="text" name="age"><br><br>
+                성별구분 : <input type="radio" name="gender" value="2">남
+                <input type="radio" name="gender" value="1">여<br><br>
+                키(cm) : <input type="text" name="height"><br><br>
+                몸무게(kg) : <input type="text" name ="weight"><br><br>
+                수축기 혈압 : <input type="text" name ="ap_hi"><br><br>
+                이완기 혈압 : <input type="text" name ="ap_lo"><br><br>
+                콜레스테롤 : <input type="radio" name="cholesterol" value="1">정상
+                <input type="radio" name="cholesterol" value="2" >정상 이상
+                <input type="radio" name="cholesterol" value="3" >정상치를 훨씬 넘는다<br><br>
+                포도당 검사 : <input type="radio" name="gluc" value="1">정상
+                <input type="radio" name="gluc" value="2" >정상 이상
+                <input type="radio" name="gluc" value="3" >정상치를 훨씬 넘는다<br><br>
+                흡연여부 : <input type="radio" name="smoke" value="1">예
+                <input type="radio" name="smoke" value="0">아니오<br><br>
+                알콜섭취여부 : <input type="radio" name="alco" value="1">예
+                <input type="radio" name="alco" value="0">아니오<br><br>
+                운동여부 : <input type="radio" name="active" value="1">예
+                <input type="radio" name="active" value="0">아니오<br><br>
+                <input type = "submit" value = "submit" />
+            </fieldset>
+
+        </form>   
+        
+    </div>
+</body>
+</html>
